@@ -2,7 +2,7 @@
     "__BOZQURDJSON__": true,
     "LANGUAGE": "Azərbaycanca",
     "LANGCODE": "az",
-    "AUTHOR": "aykhan_s",
+    "AUTHOR": "ozuduqaqavv,"@AnonyumAz",
     "STRINGS": {
         "__plugin": {
             "REPLY_FOR_PORT": "`Zəhmət olmasa Plugin-Port üçün bir fayla cavab yazın`",
@@ -30,12 +30,12 @@
             "ALREADY_DELETED": "⚠️`Plugin faylı artıq silinib.`",
             "NOT_FOUND_PLUGIN": "⚠️ **Plugin tapılmadı",
             "PLUG_DELETED": "🗑️`Plugin uğurla silindi!` **Tətbiq ediləcək əməliyyatlar üçün yenidən başlatmağınız lazımdır.**",
-            "BOZQURD_PLUGIN_CAPTION": "Bu [BozQurd](https://t.me/BozQurdResmi) pluginidir."
+            "MERLİN_PLUGIN_CAPTION": "Bu [Merlin](https://t.me/BozQurdResmi) pluginidir."
         },
         
-        "__bozqurd": {
+        "__merlin": {
             "NEED_PLUGIN": "❌ Modul tapılmadı",
-            "NEED_MODULE": "ℹ️ Zəhmət olmasa hansı BozQurd modulu üçün kömək istədiyinizi qeyd edin !!\nİstifadəsi: .bozqurd <modul adı>"
+            "NEED_MODULE": "ℹ️ Zəhmət olmasa hansı Merlin modulu üçün kömək istədiyinizi qeyd edin !!\nİstifadəsi: .merlin <modul adı>"
         },
 
         "__helpme": {
@@ -53,7 +53,7 @@
             "INVALID_MEDIA": "```Media etibarlı deyil.```",
             "PRIVATE": "`Bu əmr xüsusi mesajda istifadə edilə bilməz!`",
             "EKLE": "`Uğurla əlavə edildi`",
-            "BRAIN": "`Xəta! Bunu BozQurd Səlahiyyətli birinə edə bilmərəm.`",
+            "BRAIN": "`Xəta! Bunu Merlin Səlahiyyətli birinə edə bilmərəm.`",
             "BANNING": "`İstifadəçi qara siyahıya əlavə edilir...`",
             "ALREADY_GBANNED": "`Xəta! İstifadəçi artıq dünya miqyasında qadağan edilmişdir.`",
             "GBANNED_REASON": "`İstifadəçi dünya miqyasında qadağan edildi!`\n**Səbəbi:**",
@@ -114,7 +114,7 @@
             "ALREADY": "`Hazırda %s onsuzda avtomatik olaraq dəyişir.`",
             "SETTING": "`%s nizamlanır...`",
             "BIO": "📅 Tarix: {tarih} | ⌚️ Saat: {saat} | 🇦🇿 ",
-            "NICK": "@BozQurdResmi",
+            "NICK": "@MerlinProject",
             "SETTED": "`%s nizamlandı :)`",
             "NAME": "⏰%s"
         },
@@ -153,8 +153,8 @@
             "EFECTING": "`Effekt hazırlanır...`",
             "NOT_FOUND_EFECT": "**Qeyd etdiyiniz effekt tapılmadı! **`İstifadə edə biləcəyiniz effektlər: ``donma/ters/robot/earrape/parazit`",
             "NEED_VIDEO": "`Zəhmət olmasa bir videoya cavab verin!`",
-            "WITH_BOZQURD":"@BozQurdResmi `ilə effekt hazırlandı.`",
-            "WITH_BOZQURD_GIF": "@BozQurdResmi `ilə Gif'ə çevrildi.`",
+            "WITH_BOZQURD":"@MerlinProject `ilə effekt hazırlandı.`",
+            "WITH_BOZQURD_GIF": "@MerlinProject `ilə Gif'ə çevrildi.`",
             "CONVERTING_TO_GIF": "Gif'ə çevrilir...",
             "UPLOADING_GIF": "`Gif yüklənir...`",
             "ERROR": "Gif'ə çevirə bilmədim :("
@@ -527,7 +527,7 @@
             "SEARCHING": "`Musiqi axtarılır...`",
             "BLOCKED_DEEZER": "`Deyəsən` @DeezerMusicBot `bloklamısan zəhmət olmasa bloku aç",
             "NOT_FOUND": "`Axtardığınız mahnı tapılmadı! Bağışlayın.`",
-            "UPLOADED_WITH": "@BozQurdResmi ilə yükləndi",
+            "UPLOADED_WITH": "@MerlinProject ilə yükləndi",
             "USAGE": "`İstifadəsi:` `.song mahnı ad/youtube url/spotify url`",
             "SEARCHING_SPOT": "`Mahnıların axtarışı və yüklənməsini gözləyin!",
             "DOWNLOADED": "`Yükləmə uğurlu oldu, xahiş edirəm gözləyin.`",
@@ -587,16 +587,16 @@
             "NOT_FOUND": "qovluğu tapa bilmədi",
             "GIT_ERROR": "Git xətası!",
             "NOT_GIT": "qovluğlu bir git reposu kimi görünmür. \nAncaq botu .update now əmri ilə zorla yeniləməklə bu problemi həll edə bilərsiniz.",
-            "INVALID_BRANCH": "**[UPDATER]:**` Düşünürəm ki, BozQurd botunuzu dəyişdirdiniz və öz filialınızdan istifadə edirsiniz.\nBu vəziyyət yenilənməni edənin başını qarışdırır,\nGüncəllənmə haradan çəkiləcək?\nXahiş edirəm rəsmi repodan BozQurd Botunu istifadə edin.`",
+            "INVALID_BRANCH": "**[UPDATER]:**` Düşünürəm ki, Merlin botunuzu dəyişdirdiniz və öz filialınızdan istifadə edirsiniz.\nBu vəziyyət yenilənməni edənin başını qarışdırır,\nGüncəllənmə haradan çəkiləcək?\nXahiş edirəm rəsmi repodan BozQurd Botunu istifadə edin.`",
             "UPDATE": "\n`Botun` **Ən güncəl versiyadadır!** `Branch:` **{}**\n",
             "WAS_UPDATE": "**{} üçün yeni güncəlləmə mövcuddur!\n\nDəyişikliklər:**\n`{}`",
             "BIG": "`Dəyişikliklərin siyahısı çox böyükdür, ona bir fayl kimi baxmalısınız.`",
             "DO_UPDATE": "`Güncəllənməni etmək üçün \".update now\" komandasını istifadə edin.`",
             "FORCE_UPDATE": "`Cari sabit istifadəçi bot kodu zorla sinxronizasiya olunur...`",
             "UPDATING": "`Bot yenilənir...`",
-            "INVALID_APPNAME": "`[BOZQURD UPDATER] Güncəlləmədən istifadə etmək üçün HEROKU_APPNAME dəyişənini təyin etməlisiniz.`",
+            "INVALID_APPNAME": "`[MERLİN UPDATER] Güncəlləmədən istifadə etmək üçün HEROKU_APPNAME dəyişənini təyin etməlisiniz.`",
             "INVALID_HEROKU": "{}\n`Heroku dəyişənləri səhv və ya müəyyənləşdirilmişdir.`",
-            "HEROKU_UPDATING": "♻️ **YENİLƏNİR**\n 🐺**BozQurd** daha yaxşı olacağına əmin ola bilərsiniz. Bu müddət maksimum 5 dəqiqə çəkir.\n@BozQurdResmi",
+            "HEROKU_UPDATING": "♻️ **YENİLƏNİR**\n ❄️**Merlin** daha yaxşı olacağına əmin ola bilərsiniz. Bu müddət maksimum 5 dəqiqə çəkir.\n@MerlinProject",
             "ERRORS": "Qarşılaşdığımız səhflər bunlardır",
             "SUCCESSFULLY": "`Yeniləmə uğurla başa çatdı! \n Yenidən yüklənir ...`"
         },
