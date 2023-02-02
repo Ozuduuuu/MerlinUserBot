@@ -79,8 +79,8 @@ def register(**args):
                 if not disable_errors:
                     date = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 
-                    text = "**BOZQURD XETA HESABATI**\n"
-                    link = "[BozQurd](https://t.me/bozqurdsup)"
+                    text = "**MERLİN XETA HESABATI**\n"
+                    link = "[Merlin](https://t.me/merlinsup)"
                     text += "İstəsəniz bunu şikayət edə bilərsiniz"
                     text += f" - sadəcə bu mesajı buraya göndərin {link}.\n"
                     text += "Xəta və Tarixdən başqa heçnə qeyd edilmir\n"
@@ -92,7 +92,7 @@ def register(**args):
                     ftext += "\nburada hansısa şexsi melumatınız varsa"
                     ftext += "\nbu xeta hesabatıb olmaya biler, kimse melumatlarınıza baxa bilmez.\n"
                     ftext += "================================\n\n"
-                    ftext += "--------BOZQURD XETA HESABATI--------\n"
+                    ftext += "--------MERLİN XETA HESABATI--------\n"
                     ftext += "\nTarix: " + date
                     ftext += "\nQrup ID: " + str(check.chat_id)
                     ftext += "\nGönderen İsdifadeçinin ID: " + str(check.sender_id)
@@ -102,7 +102,7 @@ def register(**args):
                     ftext += str(format_exc())
                     ftext += "\n\nXeta:\n"
                     ftext += str(sys.exc_info()[1])
-                    ftext += "\n\n--------BOZQURD XETA HESABATI SONLUQ--------"
+                    ftext += "\n\n--------MERLİN XETA HESABATI SONLUQ--------"
 
                     command = "git log --pretty=format:\"%an: %s\" -10"
 
