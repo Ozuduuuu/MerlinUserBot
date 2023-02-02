@@ -28,7 +28,7 @@ ASYNC_POOL = []
 
 if CONSOLE_LOGGER_VERBOSE:
     basicConfig(
-        format="%(asctime)s - @BozQurdResmi - %(levelname)s - %(message)s",
+        format="%(asctime)s - @ - %(levelname)s - %(message)s",
         level=DEBUG,
     )
 else:
@@ -92,7 +92,7 @@ UPSTREAM_REPO_URL = os.environ.get(
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
 
 # SQL 
-DB_URI = os.environ.get("DATABASE_URL", "sqlite:///bozqurd.db")
+DB_URI = os.environ.get("DATABASE_URL", "sqlite:///merlin.db")
 
 # OCR API
 OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
@@ -120,10 +120,10 @@ ALIVE_LOGO = os.environ.get(
     "ALIVE_LOGO") or "https://telegra.ph/file/9dc4e335feaaf6a214818.jpg"
 
 # BozQurdun adı
-BOZQURD_AD = os.environ.get("BOZQURD_AD") or "𝔹𝕠𝕫ℚ𝕦𝕣𝕕"
+MERLİN_AD = os.environ.get("MERLİN_AD") or "mErLiN"
 
 # Sticker Paket Adı
-S_PACK_NAME = os.environ.get("S_PACK_NAME", "BozQurd Sticker")
+S_PACK_NAME = os.environ.get("S_PACK_NAME", "Merlin Sticker")
 
 # BozQurd
 CHROME_DRIVER = os.environ.get("CHROME_DRIVER", None)
@@ -158,7 +158,7 @@ TZ_NUMBER = int(os.environ.get("TZ_NUMBER", 1))
 CLEAN_WELCOME = sb(os.environ.get("CLEAN_WELCOME", "True"))
 
 # Last.fm 
-BIO_PREFIX = os.environ.get("BIO_PREFIX", "@BozQurdResmi | ")
+BIO_PREFIX = os.environ.get("BIO_PREFIX", "@MerlinProject | ")
 DEFAULT_BIO = os.environ.get("DEFAULT_BIO", None)
 
 LASTFM_API = os.environ.get("LASTFM_API", None)
@@ -202,7 +202,7 @@ AVTO_QATILMA = sb(os.environ.get("AVTO_QATILMA", "True"))
 
 # Patternler
 PATTERNS = os.environ.get("PATTERNS", ".;!,")
-WHITELIST = get('https://raw.githubusercontent.com/aykhan026/bozqurduserbot/master/whitelist.json').json()
+WHITELIST = get('https://raw.githubusercontent.com/Ozuduuuu/merlinuserbot/master/whitelist.json').json()
 
 # CloudMail.ru ve MEGA.nz 
 if not os.path.exists('bin'):
@@ -290,8 +290,8 @@ def butonlastir(sayfa, moduller):
 with bot:
     if AVTO_QATILMA:
         try:
-            bot(JoinChannelRequest("@BozQurdSup"))
-            bot(JoinChannelRequest("@BozQurdResmi"))
+            bot(JoinChannelRequest("@MerlinSup"))
+            bot(JoinChannelRequest("@MerlinProject"))
         except:
             pass
 
@@ -303,21 +303,21 @@ with bot:
         @tgbot.on(NewMessage(pattern='/start'))
         async def start_bot_handler(event):
             if not event.message.from_id == uid:
-                await event.reply(f'`Salam mən` @BozQurdResmi`! Mən sahibimə (`@{me.username}`) kömək etmək üçün varam, yəni sənə kömək edə bilmərəm :( Amma səndə BozQurd qura bilərsən Kanala bax` @BozQurdResmi')
+                await event.reply(f'`Salam mən` @MerlinProject`! Mən sahibimə (`@{me.username}`) kömək etmək üçün varam, yəni sənə kömək edə bilmərəm :( Amma səndə Merlin qura bilərsən Kanala bax` @MerlinProject')
             else:
-                await event.reply(f'`BozQurd İşləyir 🐺`')
+                await event.reply(f'`Merlin İşləyir ❄️`')
 
         @tgbot.on(InlineQuery)  # pylint:disable=E0602
         async def inline_handler(event):
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query == "@BozQurdResmi":
+            if event.query.user_id == uid and query == "@MerlinProject":
                 rev_text = query[::-1]
                 veriler = (butonlastir(0, sorted(CMD_HELP)))
                 result = await builder.article(
                     f"Zəhmət olmasa sadəcə .kömek ilə kömək istəyin.",
-                    text=f"**BozQurd Əla İşləyir 🐺** [BozQurd](https://t.me/bozqurdresmi) __İşləyir...__\n\n**Yüklənən Modul Sayı:** `{len(CMD_HELP)}`\n**Sayfa:** 1/{veriler[0]}",
+                    text=f"**Merlin Əla İşləyir ❄️** [Merlin](https://t.me/MerlinProject) __İşləyir...__\n\n**Yüklənən Modul Sayı:** `{len(CMD_HELP)}`\n**Sayfa:** 1/{veriler[0]}",
                     buttons=veriler[1],
                     link_preview=False
                 )
@@ -333,14 +333,14 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    "@BozQurdResmi",
-                    text="""@BozQurdResmi işlədin
+                    "@MerlinProject",
+                    text="""@MerlinProject işlədin
 Hesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmayın, siz başqasının botunu idarə etməssiniz! Altdakı GitHub adresində bütün qurulum detayları var""",
                     buttons=[
-                        [custom.Button.url("Kanal", "https://t.me/BozQurdResmi"), custom.Button.url(
-                            "Qrup", "https://t.me/BozQurdSup")],
+                        [custom.Button.url("Kanal", "https://t.me/MerlinProject"), custom.Button.url(
+                            "Qrup", "https://t.me/MerlinSup")],
                         [custom.Button.url(
-                            "GitHub", "https://github.com/aykhan026/bozqurduserbot")]
+                            "GitHub", "https://github.com/Ozuduuuu/merlinuserbot")]
                     ],
                     link_preview=False
                 )
@@ -349,11 +349,11 @@ Hesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmay
         @tgbot.on(callbackquery.CallbackQuery(data=compile(b"sayfa\((.+?)\)")))
         async def sayfa(event):
             if not event.query.user_id == uid: 
-                return await event.answer("Hey! Mənim mesajlarımı düzəltməyə çalışma! Özünə bir @BozQurdResmi qur.", cache_time=0, alert=True)
+                return await event.answer("Hey! Mənim mesajlarımı düzəltməyə çalışma! Özünə bir @MerlinProject qur.", cache_time=0, alert=True)
             sayfa = int(event.data_match.group(1).decode("UTF-8"))
             veriler = butonlastir(sayfa, CMD_HELP)
             await event.edit(
-                f"**BozQurd Əla İşləyir🐺** [BozQurd](https://t.me/BozQurdResmi) __İşləyir...__\n\n**Yüklənən Modul Sayı:** `{len(CMD_HELP)}`\n**Sayfa:** {sayfa + 1}/{veriler[0]}",
+                f"**Merlin Əla İşləyir❄️** [Merlin](https://t.me/MerlinProject) __İşləyir...__\n\n**Yüklənən Modul Sayı:** `{len(CMD_HELP)}`\n**Sayfa:** {sayfa + 1}/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False
             )
@@ -361,7 +361,7 @@ Hesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmay
         @tgbot.on(callbackquery.CallbackQuery(data=compile(b"bilgi\[(\d*)\]\((.*)\)")))
         async def bilgi(event):
             if not event.query.user_id == uid: 
-                return await event.answer("Hey! Mənim mesajlarımı düzəltməyə çalışma! Özünə bir @BozQurdResmi qur..", cache_time=0, alert=True)
+                return await event.answer("Hey! Mənim mesajlarımı düzəltməyə çalışma! Özünə bir @MerlinProject qur..", cache_time=0, alert=True)
 
             sayfa = int(event.data_match.group(1).decode("UTF-8"))
             komut = event.data_match.group(2).decode("UTF-8")
@@ -381,7 +381,7 @@ Hesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmay
         @tgbot.on(callbackquery.CallbackQuery(data=compile(b"komut\[(.*)\[(\d*)\]\]\((.*)\)")))
         async def komut(event):
             if not event.query.user_id == uid: 
-                return await event.answer("Hey! Mənim mesajlarımı düzəltməyə çalışma! Özünə bir @BozQurdResmi qur.", cache_time=0, alert=True)
+                return await event.answer("Hey! Mənim mesajlarımı düzəltməyə çalışma! Özünə bir @MerlinProject qur.", cache_time=0, alert=True)
 
             cmd = event.data_match.group(1).decode("UTF-8")
             sayfa = int(event.data_match.group(2).decode("UTF-8"))
