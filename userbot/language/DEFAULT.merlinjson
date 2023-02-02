@@ -1,8 +1,8 @@
 {
-    "__BOZQURDJSON__": true,
+    "__MERLİNJSON__": true,
     "LANGUAGE": "Azərbaycanca",
     "LANGCODE": "az",
-    "AUTHOR": "aykhan_s",
+    "AUTHOR": "ozuduqaqavv","@AnonyumAz",
     "STRINGS": {
         "__plugin": {
             "REPLY_FOR_PORT": "`Zəhmət olmasa Plugin-Port üçün bir fayla cavab yazın`",
@@ -30,12 +30,12 @@
             "ALREADY_DELETED": "`Plugin faylı artıq silinib.`",
             "NOT_FOUND_PLUGIN": "`Belə bir plugin bəlkə var idi, bəlkədə yox. Ancaq hazırda olmadığı dəqiqdir.`",
             "PLUG_DELETED": "`Plugin uğurla silindi!` **Tətbiq ediləcək əməliyyatlar üçün yenidən başlatmağınız lazımdır.**",
-            "BOZQURD_PLUGIN_CAPTION": "Bu [BozQurd](https://t.me/BozQurdResmi) pluginidir."
+            "MERLİN_PLUGIN_CAPTION": "Bu [Merlin](https://t.me/MerlinProject) pluginidir."
         },
         
         "__bozqurd": {
-            "NEED_PLUGIN": "Zəhmət olmasa bir BozQurd modulu adı yazın.",
-            "NEED_MODULE": "Zəhmət olmasa hansı BozQurd modulu üçün kömək istədiyinizi qeyd edin !!\nİstifadəsi: .bot <modul adı>"
+            "NEED_PLUGIN": "Zəhmət olmasa bir Merlin modulu adı yazın.",
+            "NEED_MODULE": "Zəhmət olmasa hansı Merlin modulu üçün kömək istədiyinizi qeyd edin !!\nİstifadəsi: .bot <modul adı>"
         },
 
         "__helpme": {
@@ -114,7 +114,7 @@
             "ALREADY": "`Hazırda %s onsuzda avtomatik olaraq dəyişir.`",
             "SETTING": "`%s nizamlanır...`",
             "BIO": "📅 Tarix: {tarih} | ⌚️ Saat: {saat} | ",
-            "NICK": "@BozQurdResmi",
+            "NICK": "@MerlinProject",
             "SETTED": "`%s nizamlandı :)`",
             "NAME": "⏰%s"
         },
@@ -363,9 +363,9 @@
             "GOODMORNIN_YALL": "`Sabahınız xeyir!`",
             "GOODBYE_MFRS": "`Görüşənədək... *Windows XP söndürlmə səsi*`",
             "RESTARTING": "`Bot yenidən qoşulur..`",
-            "SUPPORT_GROUP": "[Buradan](http://t.me/BozQurdsup) Dəstək qrupumuza çata bilərsiniz.",
-            "CREATOR": "Bu bot \n[Babaş](https://t.me/c0alaa) tərəfindən hazırlanmışdır. \n",
-            "README": "[BozQurd README.md](https://github.com/thec0ala/BozQurd/blob/main/README.md)",
+            "SUPPORT_GROUP": "[Buradan](http://t.me/Merlinsup) Dəstək qrupumuza çata bilərsiniz.",
+            "CREATOR": "Bu bot \n[Araz və](https://t.me/c0alaa) tərəfindən hazırlanmışdır. \n",
+            "README": "[Merlin README.md](https://github.com/thec0ala/BozQurd/blob/main/README.md)",
             "REPO": "[BozQurd Repo](https://github.com/thec0ala/BozQurd)",
             "CHECK_LOGS": "`Tapılmış Mesaj üçün istifadəçi qeydlərini yoxlayın!`"
         },
