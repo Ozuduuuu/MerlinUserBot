@@ -102,7 +102,7 @@ class InteractiveTelegramClient(TelegramClient):
 
 if __name__ == '__main__':
    surum = str(sys.version_info[0]) + "." + str(sys.version_info[1])
-   bilgi("BozQurd String v1\nTelegram: @BozQurd\nPython: " + surum + "\nTeleThon: " + version.__version__ + "\nBs4/Requests: ✅\n")
+   bilgi("Merlin String v1\nTelegram: @Merlin\nPython: " + surum + "\nTeleThon: " + version.__version__ + "\nBs4/Requests: ✅\n")
    onemli("[1] Yeni")
    onemli("[2] Köhnə\n")
    
@@ -145,8 +145,8 @@ if __name__ == '__main__':
          hashh = soup.find("input", {"name": "hash"}).get("value")
          AppInfo = {
             "hash": hashh,
-            "app_title":"BozQurd",
-            "app_shortname": "BozQurd",
+            "app_title":"Merlin",
+            "app_shortname": "Merlin",
             "app_url": "",
             "app_platform": "android",
             "app_desc": ""
