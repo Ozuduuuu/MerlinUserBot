@@ -9,17 +9,17 @@
 from userbot.cmdhelp import CmdHelp
 from userbot import cmdhelp
 from userbot import CMD_HELP
-from userbot.events import register as bozqurd
+from userbot.events import register as merlin
 
 # ██████ LANGUAGE CONSTANTS ██████ #
 
 from userbot.language import get_value
-LANG = get_value("__bozqurd")
+LANG = get_value("__merlin")
 
 # ████████████████████████████████ #
 
-@bozqurd(outgoing=True, pattern="^.bozqurd(?: |$)(.*)")
-async def bozqurd(event):
+@bozqurd(outgoing=True, pattern="^.merlin(?: |$)(.*)")
+async def merlin(event):
     """ necesen """
     args = event.pattern_match.group(1).lower()
     if args:
