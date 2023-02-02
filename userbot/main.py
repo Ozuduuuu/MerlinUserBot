@@ -15,7 +15,7 @@ import requests
 from telethon.tl.types import InputMessagesFilterDocument
 from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
 from telethon.tl.functions.channels import GetMessagesRequest
-from . import BRAIN_CHECKER, LOGS, bot, PLUGIN_CHANNEL_ID, CMD_HELP, LANGUAGE, BOZQURD_VERSION, PATTERNS
+from . import BRAIN_CHECKER, LOGS, bot, PLUGIN_CHANNEL_ID, CMD_HELP, LANGUAGE, MERLİN_VERSION, PATTERNS
 from .modules import ALL_MODULES
 import userbot.modules.sql_helper.mesaj_sql as MSJ_SQL
 import userbot.modules.sql_helper.qaleriya_sql as QALERIYA_SQL
@@ -39,13 +39,13 @@ DIZCILIK_STR = [
 ]
 
 ALIVE_MESAJ = [
-    "**Canım Gözüm** {mention} ❤️ \n 🐺`BozQurd işləyir...`",
-    "😍**Səni unutdum sanma** {mention} 🐺`BozQurd işləyir...`",
-    "😈**Narahat olma** {mention} 🐺`BozQurd işləyir...`",
-    "🇦🇿🇹🇷 **Bizim Qanımız Türk Qanıdır** {mention} \n 🐺`BozQurd işləyir...`",
-    "{mention} **Bu** 🌹-ü **Səninçün Alp dağlarından gətirdim**😍 \n 🐺`BozQurd İşləyir...`",
-    "{mention} **Sən .alive yazarkən mən bunu səninçün hazırladım** (⊃｡•́‿•̀｡)⊃━✿✿✿✿✿✿ 😍\n🐺`BozQurd işləyir...`",
-    "{mention} **Gecə-Gündüz fasiləsiz xidmətindəyəm**😎\n🐺`BozQurd işləyir...`",
+    "**Canım Gözüm** {mention} ❤️ \n ❄️`Merlin işləyir...`",
+    "😍**Səni unutdum sanma** {mention} ❄️`Merlin işləyir...`",
+    "😈**Narahat olma** {mention} ❄️`Merlin işləyir...`",
+    "🇦🇿🇹🇷 **Bizim Qanımız Türk Qanıdır** {mention} \n ❄️`Merlin işləyir...`",
+    "{mention} **Bu** 🌹-ü **Səninçün Alp dağlarından gətirdim**😍 \n ❄️`Merlin İşləyir...`",
+    "{mention} **Sən .alive yazarkən mən bunu səninçün hazırladım** (⊃｡•́‿•̀｡)⊃━✿✿✿✿✿✿ 😍\n❄️`Merlin işləyir...`",
+    "{mention} **Gecə-Gündüz fasiləsiz xidmətindəyəm**😎\n❄️`Merlin işləyir...`",
 ]
 
 AFKSTR = [
@@ -74,7 +74,7 @@ AFKSTR = [
 UNAPPROVED_MSG = ("`Hey,` {mention}`! Bu bir bot. Narahat olma.\n\n`"
                   "`Sahibim sənə PM atma icazəsi verməyib. `"
                   "`Zəhmət olmasa sahibimin aktiv olmağını gözləyin, o adətən PM'ləri qəbul edir.\n\n`"
-                  "`Bildiyim qədəri ilə o dəlilərə PM atma icazəsi vermir.`\n@BozQurdResmi")
+                  "`Bildiyim qədəri ilə o dəlilərə PM atma icazəsi vermir.`\n@MerlinProject")
 
 DB = connect("learning-data-root.check")
 CURSOR = DB.cursor()
@@ -126,10 +126,10 @@ def extractCommands(file):
                         Komutlar.append(KomutStr)
 
             # BozQurd
-            Bozqurdpy = re.search('\"\"\"BOZQURDPY(.*)\"\"\"', FileRead, re.DOTALL)
-            if not Bozqurdpy == None:
-                Bozqurdpy = Bozqurdpy.group(0)
-                for Satir in Bozqurdpu.splitlines():
+            Merlinpy = re.search('\"\"\"MERLİNPY(.*)\"\"\"', FileRead, re.DOTALL)
+            if not Merlinpy == None:
+                Merlinpy = Merlinpy.group(0)
+                for Satir in Merlinpu.splitlines():
                     if (not '"""' in Satir) and (':' in Satir):
                         Satir = Satir.split(':')
                         Isim = Satir[0]
@@ -150,8 +150,8 @@ def extractCommands(file):
 try:
     bot.start()
     idim = bot.get_me().id
-    bozqurdbl = requests.get('https://raw.githubusercontent.com/aykhan026/bozqurduserbot/master/bozqurdblacklist.json').json()
-    if idim in bozqurdbl:
+    merlinbl = requests.get('https://raw.githubusercontent.com/Ozuduuuu/Merlinuserbot/master/merlinblacklist.json').json()
+    if idim in merlinbl:
         bot.disconnect()
 
     # ChromeDriver'ı Ayarlayaq #
@@ -242,8 +242,8 @@ for module_name in ALL_MODULES:
     imported_module = import_module("userbot.modules." + module_name)
 
 LOGS.info("Botunuz işleyir! Hansısa söhbete  .alive yazaraq Test ede bilersiz!."
-          " Kömeye ehtiyacınız varsa, destek qrupuna gelin: t.me/BozQurdSup")
-LOGS.info(f"Bot versiyası: BozQurd {BOZQURD_VERSION}")
+          " Kömeye ehtiyacınız varsa, destek qrupuna gelin: t.me/MerlinSup")
+LOGS.info(f"Bot versiyası: Merlin {MERLİN_VERSION}")
 
 """
 if len(argv) not in (1, 3, 4):
