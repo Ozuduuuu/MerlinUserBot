@@ -11,7 +11,7 @@ LOGS.info("Dil faylı yüklenir...")
 LANGUAGE_JSON = None
 
 for dil in bot.iter_messages(pchannel, filter=InputMessagesFilterDocument):
-    if ((len(dil.file.name.split(".")) >= 2) and (dil.file.name.split(".")[1] == "bozqurdjson")):
+    if ((len(dil.file.name.split(".")) >= 2) and (dil.file.name.split(".")[1] == "merlinjson")):
         if path.isfile(f"./userbot/language/{dil.file.name}"):
             try:
                 LANGUAGE_JSON = loads(open(f"./userbot/language/{dil.file.name}", "r").read())
@@ -21,7 +21,7 @@ for dil in bot.iter_messages(pchannel, filter=InputMessagesFilterDocument):
 
                 if path.isfile("./userbot/language/DEFAULT.merlinjson"):
                     LOGS.warn("Varsayılan dil faylı işledilir...")
-                    LANGUAGE_JSON = loads(open(f"./userbot/language/DEFAULT.bozqurdjson", "r").read())
+                    LANGUAGE_JSON = loads(open(f"./userbot/language/DEFAULT.merlinjson", "r").read())
                 else:
                     raise Exception("Dil faylı sehfdir.")
         else:
